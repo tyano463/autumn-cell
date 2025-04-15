@@ -8,8 +8,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>2D Color Picker with Hue</title>
+<BaseHead title="2D Color Picker with Hue" description="{SITE_DESCRIPTION}" />
   <style>
     canvas {
       border: 1px solid #ccc;
@@ -32,6 +31,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
   </style>
 </head>
 <body>
+    <Header />
   <h3>2D Color Picker + Hue Bar</h3>
   <canvas id="colorCanvas" width="256" height="256"></canvas>
   <canvas id="hueCanvas" width="256" height="20"></canvas>
@@ -138,5 +138,6 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     drawHueBar();
     drawColorPalette(currentHue);
   </script>
+    <Footer />
 </body>
 </html>
